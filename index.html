@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Online Registration Form </title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+<header class="main-header">
+<h1 class="title"> THE CODE REVIEW </h1>
+<div class="first-info">
+<h2> Signup for our newsletter</h2>
+<p>Get the latest news on how your code
+   is doing right in your inbox</p>
+   </div>
+</header>
+<main>
+<div class="contact-info">
+<form>
+  <fieldset>
+    <legend>Contact Information</legend>
+  <div class="container">
+    <label for="name"> Full Name</label>
+    <input type="text" id="name" name="user_name" placeholder="Required  ">
+    <label for="email"> Email Address </label>
+    <input type="email" id="email" name="user_email" placeholder="Required  ">
+    <label for="phone"> Phone Number </label>
+      <input type="tel" id="phone" name="user_phone">
+      <label for="address">Street Address </label>
+      <input type="text" id="address" name="user_address">
+      <label for="city"> City</Label>
+      <input type="text" id="city" name="user_city">
+      <label for="state"> State </label>
+      <select id="state" name="user_state">
+<option value="choose_state">Choose State</option>
+<option value="berlin">Berlin</option>
+<option value="nordrhein-westfalen">Nordrhein-Westfalen</option>
+<option value="hamburgo">Hamburgo</option>
+<option value="bayern">Bayern</option>
+</select>
+<br>
+<label for="zip_code"> Zip Code </label>
+<input type="text" id="zip_code" name="user_zip-code">
+</div>
+</fieldset>
+</div>
+<fieldset>
+<legend>Newsletter </legend>
+  <p> Select the newsletters you would like to recieve </p>
+  <input type="checkbox" id="html-news" value="html-news_interest" name="html_news_interest">
+  <label for="html-news" class="inline"> HTML News </label><br>
+  <input type="checkbox" id="css-news" value="css-news_interest" name="css_news_interest">
+  <label for="css-news" class="inline"> CSS News </label><br>
+  <input type="checkbox" id="javascript-news" value="javascript-news_interest" name="javascript_news_interest">
+  <label for="javascript-news" class="inline"> Javascript News </label><br>
+  <label> Newsletter format </label><br>
+  <input type="radio" id="html" value="format_html" name="newsletter_format">
+  <label for="html" class="inline"> HTML </label><br>
+  <input type="radio" id="plain-text" value="format_plain-text" name="newsletter_format">
+  <label for="plain-text" class="inline"> Plain text </label><br>
+  <div class="suggestions">
+  <label for="other-topics"> Other topics you'd like to hear about </label>
+  <textarea id="other-topics" name="topics-of-interest"> </textarea>
+  </div>
+</fieldset>
+  <button type="submit"> Sign Up </button>
+</form>
+
+</main>
+<footer>
+<p> Copyright The Code Review </p>
+
+  </footer>
+  </body>
+  </html>

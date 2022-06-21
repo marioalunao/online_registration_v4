@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+}
+body {
+font-family: 'Work Sans', sans-serif;
+line-height:1.6;
+margin: auto;
+background-color: #fefefd;
+max-width: 100%;
+}
+.contact-info label{
+display:block;
+}
+label{
+margin-left:2.5%;
+color:gray;
+}
+input, textarea, select{
+background:#aab0b5;
+width:100%;
+margin-left:2.5%;
+margin-right:2.5%;
+font-size: 18px;
+border-radius: 5px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #161484;
+}
+.contact-info{
+  border-bottom: 3px solid;
+}
+fieldset{
+  border:none;
+
+}
+input[id*="zip"]{
+  width:50%;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder{
+text-align:right;
+font-size: 12px;
+
+}
+main {
+  border-top: 3px solid;
+margin-top: 2.2%;
+  margin-left: 2.2%;
+  margin-right: 2.2%;
+}
+
+legend {
+font-size:20px;
+}
+p {
+color:gray;
+}
+.title {
+background:#132713;
+color:#e2e8e1;
+text-align: center;
+width:100%;
+font-size:20px;
+}
+.first-info{
+text-align: center;
+border-bottom: 8px solid;
+margin-left: 2.2%;
+margin-right: 2.2%;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+width:5%;
+margin-right: 0;
+
+}
+label .inline{
+  display:inline-block;
+  width:10%;
+}
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #23a7a7;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+footer {
+  color:gray;
+  font-style: oblique;
+  text-align: center;
+  margin-bottom: 30%;
+}
+
+@media(min-width:768px){
+  .container{
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+label{
+  width:15%;
+  display: inline;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+input, textarea, select{
+background:#dde3f6;
+width:70%;
+font-size: 2em;
+}
+input[id*="zip"]{
+  width:14%;
+}
+#other-topics{
+  width: 100%;
+}
+main, .first-info{
+  margin-left:10%;
+  margin-right:10%;
+}
+
+}
