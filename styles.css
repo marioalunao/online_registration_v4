@@ -1,3 +1,4 @@
+/* Base Styles -------------------------------- */
 *{
   box-sizing: border-box;
 }
@@ -8,9 +9,7 @@ margin: auto;
 background-color: #fefefd;
 max-width: 100%;
 }
-.contact-info label{
-display:block;
-}
+
 label{
 margin-left:2.5%;
 color:gray;
@@ -28,9 +27,7 @@ textarea:focus,
 select:focus {
   outline: 3px solid #161484;
 }
-.contact-info{
-  border-bottom: 3px solid;
-}
+
 fieldset{
   border:none;
 
@@ -57,6 +54,33 @@ font-size:20px;
 p {
 color:gray;
 }
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #23a7a7;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+footer {
+  color:gray;
+  font-style: oblique;
+  text-align: center;
+  margin-bottom: 30%;
+}
+/* Classes -------------------------------- */
+.contact-info{
+  border-bottom: 3px solid;
+}
+.contact-info label{
+display:block;
+}
 .title {
 background:#132713;
 color:#e2e8e1;
@@ -81,27 +105,8 @@ label .inline{
   display:inline-block;
   width:10%;
 }
-button {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #23a7a7;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-}
-footer {
-  color:gray;
-  font-style: oblique;
-  text-align: center;
-  margin-bottom: 30%;
-}
 
+/* Media  -------------------------------- */
 @media(min-width:768px){
   .container{
     display:flex;
