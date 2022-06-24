@@ -116,18 +116,19 @@ label .inline{
     justify-content:flex-start;
     flex-direction:row;
 }
-label{
-  flex-grow: 1;
+label, label[for="zip_code"]{
+  flex:1;
   font-size: 1.1em;
   margin-top: 10px;
+  white-space: nowrap;
 }
 input, textarea, select{
 background:#dce4ec;
-flex-grow: 2;
+flex:4;
 font-size: 2em;
 }
 .zip1 {
-  flex:2;
+  flex:4;
 }
 #zip_code{
   width:25%;
