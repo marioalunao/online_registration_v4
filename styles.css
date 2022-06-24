@@ -11,16 +11,14 @@ max-width: 100%;
 }
 
 label{
-margin-left:2.5%;
 color:gray;
+flex: 1;
 }
 input, textarea, select{
-background:#aab0b5;
-width:100%;
-margin-left:2.5%;
-margin-right:2.5%;
+background:#dce4ec;
 font-size: 18px;
 border-radius: 5px;
+flex: 2;
 }
 input:focus,
 textarea:focus,
@@ -30,11 +28,8 @@ select:focus {
 
 fieldset{
   border:none;
+}
 
-}
-input[id*="zip"]{
-  width:50%;
-}
 input[type="text"]::placeholder,
 input[type="email"]::placeholder{
 text-align:right;
@@ -42,7 +37,6 @@ font-size: 12px;
 
 }
 main {
-  border-top: 3px solid;
 margin-top: 2.2%;
   margin-left: 2.2%;
   margin-right: 2.2%;
@@ -74,25 +68,23 @@ footer {
   text-align: center;
   margin-bottom: 30%;
 }
+.break{
+  border-top: 5px solid black;
+}
+hr {
+  border-top: 2.5px solid black;
+}
+
 /* Classes -------------------------------- */
-.contact-info{
-  border-bottom: 3px solid;
-}
-.contact-info label{
-display:block;
-}
+
 .title {
 background:#132713;
 color:#e2e8e1;
 text-align: center;
-width:100%;
 font-size:20px;
 }
 .first-info{
 text-align: center;
-border-bottom: 8px solid;
-margin-left: 2.2%;
-margin-right: 2.2%;
 }
 
 input[type="radio"],
@@ -103,29 +95,42 @@ margin-right: 0;
 }
 label .inline{
   display:inline-block;
-  width:10%;
 }
+.container1{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+#zip_code {
+  width: 50%;
+}
+
 
 /* Media  -------------------------------- */
 @media(min-width:768px){
-  .container{
+  .container1{
     display:flex;
-    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content:flex-start;
+    flex-direction:row;
 }
 label{
-  width:15%;
-  display: inline;
+  flex-grow: 1;
   font-size: 1.1em;
   margin-top: 10px;
 }
 input, textarea, select{
-background:#dde3f6;
-width:70%;
+background:#dce4ec;
+flex-grow: 2;
 font-size: 2em;
 }
-input[id*="zip"]{
-  width:14%;
+.zip1 {
+  flex:2;
+}
+#zip_code{
+  width:25%;
 }
 #other-topics{
   width: 100%;
